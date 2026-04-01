@@ -1,0 +1,26 @@
+# PyTorch CPU wheels are not published to PyPI.
+# This extra-index-url tells pip to also look at the official
+# PyTorch download server when resolving torch and torchvision.
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+# Web framework
+fastapi>=0.111.0
+uvicorn[standard]>=0.30.0
+python-multipart>=0.0.9
+
+# Deep learning — CPU build (resolved from the PyTorch wheel index above).
+# Tested on Python 3.12.7 (Windows, conda environment).
+torch>=2.4.0
+torchvision>=0.19.0
+
+# Image handling
+Pillow>=10.3.0
+
+# Numerical computing
+numpy>=1.26.4
+
+# Environment variable loading — reads LLM API keys from .env at startup
+python-dotenv>=1.0.0
+
+# Google AI Studio SDK — used for Gemini (descriptor) and Gemma (chatbot) endpoints
+google-genai>=1.0.0
