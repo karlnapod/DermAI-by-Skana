@@ -9,6 +9,7 @@ import DisclaimersPage from './pages/DisclaimersPage.jsx';
 import SkinDiseasePage from './pages/SkinDiseasePage.jsx';
 import SkinCancerPage from './pages/SkinCancerPage.jsx';
 import AboutPage from './pages/AboutPage.jsx';
+import NotFoundPage from './pages/NotFoundPage.jsx';
 
 
 /* The following function is responsible for rendering the ambient teal blob
@@ -50,6 +51,7 @@ function App() {
             <Route path="/skin-disease"  element={<SkinDiseasePage />} />
             <Route path="/skin-cancer"   element={<SkinCancerPage />}  />
             <Route path="/about"         element={<AboutPage />}        />
+            <Route path="*"              element={<NotFoundPage />}     />
           </Routes>
         </main>
 

@@ -1783,3 +1783,64 @@ img {
   color: var(--color-text-nav);
   line-height: 1.80;
 }
+
+
+/* ============================================================
+   404 Not Found Page
+   ============================================================ */
+
+.not-found-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 80px 24px 100px;
+  min-height: calc(100vh - var(--navbar-height) - var(--navbar-top-offset) - 40px);
+}
+
+.not-found-code {
+  font-size: clamp(5rem, 14vw, 9rem);
+  font-weight: 800;
+  line-height: 1;
+  background: linear-gradient(135deg, var(--color-teal-mid) 0%, var(--color-teal-deep) 60%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 16px;
+  letter-spacing: -0.03em;
+}
+
+.not-found-heading {
+  font-size: clamp(1.4rem, 3.5vw, 2rem);
+  font-weight: 700;
+  color: var(--color-text-hero);
+  margin-bottom: 14px;
+}
+
+.not-found-body {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--color-text-sub);
+  line-height: 1.70;
+  max-width: 380px;
+  margin-bottom: 36px;
+}
+
+.not-found-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 36px;
+  background: var(--color-teal-deep);
+  color: #ffffff;
+  border-radius: 30px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background var(--transition);
+}
+
+.not-found-btn:hover {
+  background: var(--color-teal-dark);
+}
