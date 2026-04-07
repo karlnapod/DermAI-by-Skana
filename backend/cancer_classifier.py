@@ -62,6 +62,10 @@ class CancerClassifier:
         self.device = torch.device("cpu")
         self.model = build_cancer_model()
 
+        # Uncomment this line in case of Pytorch Unpickling Error when loading the backend
+        # state_dict = torch.load(model_path, map_location=self.device, weights_only=False)
+
+        # Comment out this line if the line above is uncommented.
         state_dict = torch.load(model_path, map_location=self.device)
         self.model.load_state_dict(state_dict)
         self.model.eval()
